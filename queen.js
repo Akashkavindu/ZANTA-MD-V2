@@ -399,7 +399,7 @@ async function connectToWA() {
 }
 if (!app) return;
 app.get("/", (req, res) => {
-  res.send("hey I am alive, Queen_Anju Is started✅");
+  res.send("hey I am alive, ZANTA-MD-V2 Is started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
