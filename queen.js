@@ -29,7 +29,7 @@ const sess = require("./session");
 async function sessdl() {
   try {
     // Extract the Base64 encoded session data
-    const base64Data = sess.SESSION_ID.split("ANJU-XPRO~")[1];
+    const base64Data = sess.SESSION_ID.split("ZANTA-MD~")[1];
     if (!base64Data) {
       throw new Error("Invalid SESSION_ID format - missing Base64 data");
     }
@@ -91,7 +91,7 @@ async function connectToWA() {
   const getPrefix = () => config.PREFIX;
   const getWelcome = () => config.WELCOME;
   //===========================
-  console.log("🔥 QUEEN ANJU XPRO is starting...");
+  console.log("🔥 ZANTA-MD-V2 is starting...");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/sessions/"
   );
@@ -119,9 +119,9 @@ async function connectToWA() {
       console.log("connected to whatsapp ✅");
       // Assuming `config` contains all the settings
       let up = `
-          🚀 **© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚 Connected Successfully!** ✅ 
+          🚀 **© ZANTA-MD-V2 💚 Connected Successfully!** ✅ 
           
-          --- **🎉 Welcome to © 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚!** 🎉 
+          --- **🎉 Welcome to © ZANTA-MD-V2 💚!** 🎉 
           ✦» 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${require("./package.json").version}
           ✦» 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
           ✦» 𝙷𝚘𝚜𝚝 : ${os.hostname()}
@@ -150,7 +150,7 @@ async function connectToWA() {
             config.AUTORECORDING ? "Enabled" : "Disabled"
           }
       
-          --- Thank you for using **© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚**. 
+          --- Thank you for using **© ZANTA-MD-V2 💚**. 
           We're here to make your experience enjoyable and seamless. 
           If you need any help or have questions, don't hesitate to ask. 
           
@@ -159,18 +159,18 @@ async function connectToWA() {
       conn.sendMessage(conn.user.id, {
         text: up,
         contextInfo: {
-          mentionedJid: ["94717775628@s.whatsapp.net"], // specify mentioned JID(s) if any
+          mentionedJid: ["94743404814@s.whatsapp.net"], // specify mentioned JID(s) if any
           groupMentions: [],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: "120363299978149557@newsletter",
-            newsletterName: "© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚",
+            newsletterName: "© ZANTA-MD-V2 💚",
             serverMessageId: 999,
           },
           externalAdReply: {
-            title: "© 𝚀𝚄𝙴𝙴𝙽 𝙰𝙽𝙹𝚄 𝗑ᴾᴿᴼ 💚",
-            body: " ©𝐌𝐑 𝐑𝐀𝐒𝐇𝐌𝐈𝐊𝐀 𝐎𝐅𝐂 💚",
+            title: "© ZANTA-MD-V2 💚",
+            body: " ©𝐌𝐑 Akash Kavindu 💚",
             mediaType: 1,
             sourceUrl: "https://github.com/Mrrashmika",
             thumbnailUrl:
