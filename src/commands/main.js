@@ -20,7 +20,7 @@ uptime:${runtime(process.uptime())}
 `
 await conn.sendMessage(from,
      {
-        image:{url:""},
+        image:{url:"https://github.com/Akashkavindu/ZANTA-MD-V2/blob/main/src/Images/ChatGPT%20Image%20Nov%2021,%202025,%2001_21_32%20AM.png?raw=true"},
         caption: desc
      },{
        quoted:mek
@@ -33,7 +33,7 @@ await conn.sendMessage(from,
     }
   },
   {
-    name:"alive",
+    name:"ping",
     description:"Bot online check",
     react:"🤖",
     ownerOnly: false,
