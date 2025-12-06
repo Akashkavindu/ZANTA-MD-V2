@@ -13,7 +13,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@sl-code-lords/movie-api": "^1.0.0",
     "@sl-code-lords/si-subdl": "^1.1.1",
-    "@whiskeysockets/baileys": "^7.0.0-rc.8",
+    "@whiskeysockets/baileys": "npm:anju-xpro-baileys",
     "axios": "^1.13.2",
     "crypto": "^4.2.0",
     "buffer": "^6.0.3",
