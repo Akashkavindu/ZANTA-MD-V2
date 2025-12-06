@@ -15,6 +15,7 @@
     "@sl-code-lords/si-subdl": "^1.1.1",
     "@whiskeysockets/baileys": "^7.0.0-rc.8",
     "axios": "^1.13.2",
+    "crypto": "^4.2.0",
     "buffer": "^6.0.3",
     "express": "latest",
     "ffmpeg": "^0.0.4",
